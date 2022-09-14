@@ -1,23 +1,5 @@
-# Description
 
-This python project provides an API to run some ingestion data procceses. This project includes additional features like the following:
 
-1.  Upload CSV for 3 tables:
-    * HIRED_EMPLOYEES
-    * DEPARTMENTS
-    * JOBS
-2. Backup the tables from snowflake to AVRO files.
-3. Restore tables from ABRO backup files
-
-## Considerations
-
-* I considered that all the files are on the same folder like the script. We could create a UI with html, css and javascript to deliver better UI experience but this was not the scope of this task.
-
-* I am using snowflake as my database since it provides a free tier for testing.
-
-* I am using a config file to get my snowflake credentials. This will be provided on the email that I will send to Giovanna and Carlos.
-
-# API Endpoints
 
 ## Upload
 
