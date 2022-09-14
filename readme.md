@@ -60,13 +60,12 @@ The server will trigger the process and send the following json:
 # How to run the project
 
 1. you need to clone this repo
-2. copy the `config.json` file from the email to the root folder of the project. This file contains the snowflake credentials.
-3. Run the following command to build the docker image:
+2. Run the following command to build the docker image:
 ```bash
 docker build -t globant .
 ```
-4. Run the server with the following command:
+3. Run the server with the following command:
 ```bash
 docker run -p 5000:5000 globant
 ```
-5. Start using the app on your localhost with the explained endpoints from the previous section.
+4. Start using the app on your localhost with the explained endpoints from the previous section.
