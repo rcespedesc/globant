@@ -5,11 +5,11 @@
 
 To execute the upload process on the server you need to call one of thefollowing endpoints:
 
-http://127.0.0.1:3000/hired_employees/upload
+http://127.0.0.1:5000/hired_employees/upload
 
-http://127.0.0.1:3000/departments/upload
+http://127.0.0.1:5000/departments/upload
 
-http://127.0.0.1:3000/jobs/upload
+http://127.0.0.1:5000/jobs/upload
 
 The server will trigger the process and send the following json:
 
@@ -25,11 +25,11 @@ The server will trigger the process and send the following json:
 
 To execute the backup process on the server you need to call one of thefollowing endpoints. The server is going to create avro files locally on the avro_backup folder:
 
-http://127.0.0.1:3000/hired_employees/backup
+http://127.0.0.1:5000/hired_employees/backup
 
-http://127.0.0.1:3000/departments/backup
+http://127.0.0.1:5000/departments/backup
 
-http://127.0.0.1:3000/jobs/backup
+http://127.0.0.1:5000/jobs/backup
 
 The server will trigger the process and send the following json:
 
@@ -43,11 +43,11 @@ The server will trigger the process and send the following json:
 
 To execute the restore process on the server you need to call one of thefollowing endpoints. The server is going to read the avro files and upload them into snowflake:
 
-http://127.0.0.1:3000/hired_employees/restore
+http://127.0.0.1:5000/hired_employees/restore
 
-http://127.0.0.1:3000/departments/restore
+http://127.0.0.1:5000/departments/restore
 
-http://127.0.0.1:3000/jobs/restore
+http://127.0.0.1:5000/jobs/restore
 
 The server will trigger the process and send the following json:
 
@@ -63,10 +63,10 @@ The server will trigger the process and send the following json:
 2. copy the `config.json` file from the email to the root folder of the project. This file contains the snowflake credentials.
 3. Run the following command to build the docker image:
 ```bash
-docker build -t globant_app .
+docker build -t globant .
 ```
 4. Run the server with the following command:
 ```bash
-docker run -p 3000:3000 globant_app
+docker run -p 5000:5000 globant
 ```
 5. Start using the app on your localhost with the explained endpoints from the previous section.
